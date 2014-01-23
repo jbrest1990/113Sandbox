@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="com.badlogic.gdx">
+	<inherits name="com.esotericsoftware.tablelayout"/>
+	<source path="gdx">
+		<include name="src/com/me/mygdxgame/AnimationActor.java"/>
+		<include name="src/com/me/mygdxgame/AssetsManager.java"/>
+		<include name="src/com/me/mygdxgame/BasicScreen.java"/>
+		<include name="src/com/me/mygdxgame/Color.java"/>
+		<include name="src/com/me/mygdxgame/EnemyType.java"/>
+		<include name="src/com/me/mygdxgame/GameScreen.java"/>
+		<include name="src/com/me/mygdxgame/HighscoreScreen.java"/>
+		<include name="src/com/me/mygdxgame/InputHandler.java"/>
+		<include name="src/com/me/mygdxgame/InputListener.java"/>
+		<include name="src/com/me/mygdxgame/LoadScreen.java"/>
+		<include name="src/com/me/mygdxgame/MainMenuIntroScreen.java"/>
+		<include name="src/com/me/mygdxgame/MainMenuScreen.java"/>
+		<include name="src/com/me/mygdxgame/MenuScreen.java"/>
+		<include name="src/com/me/mygdxgame/MyGdxGame.java"/>
+		<include name="src/com/me/mygdxgame/Player.java"/>
+		<include name="src/com/me/mygdxgame/PlayerType.java"/>
+		<include name="src/com/me/mygdxgame/ScreenManager.java"/>
+		<include name="src/com/me/mygdxgame/TestActor.java"/>
+		<include name="src/com/me/mygdxgame/TestController.java"/>
+		<include name="src/com/me/mygdxgame/TestEnemy.java"/>
+		<include name="src/com/me/mygdxgame/TestLoadScreen.java"/>
+		<include name="src/com/me/mygdxgame/TestMainMenuScreen.java"/>
+		<include name="src/com/me/mygdxgame/TestMenuScreen.java"/>
+		<include name="src/com/me/mygdxgame/TestMenuScreen2.java"/>
+		<include name="src/com/me/mygdxgame/TestScreen.java"/>
+		<include name="graphics/g2d/Animation.java"/>
+		<include name="graphics/g3d/Animation.java"/>
+	</source>
+</module>
