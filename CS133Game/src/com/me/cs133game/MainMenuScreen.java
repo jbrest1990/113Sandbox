@@ -13,12 +13,6 @@ import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 
 public class MainMenuScreen extends MenuScreen {
-	private OrthographicCamera camera;
-	private SpriteBatch batch;
-	private Texture texture;
-	private Texture tower;
-	private Sprite sprite;
-	private Sprite towerSprite;
 	private Button play;
 	private Button in;
 	private Button high;
@@ -62,7 +56,7 @@ public class MainMenuScreen extends MenuScreen {
 		a = new Image(AssetsManager.get().getRegion("mainmenulogo"));
 		myStage.addActor(a);
 		a.setPosition(240-AssetsManager.get().getRegion("mainmenulogo").getRegionWidth()/2, 800 - AssetsManager.get().getRegion("mainmenulogo").getRegionHeight()/2 - 67);*/
-		//play = addButton(AssetsManager.get().getRegion("mainmenuplay"), AssetsManager.get().getRegion("mainmenuplayp"), 240-AssetsManager.get().getRegion("mainmenuplay").getRegionWidth()/2, 800-AssetsManager.get().getRegion("mainmenuplay").getRegionHeight()-40-95);
+		play = addButton(AssetsManager.get().getRegion("mainmenuplay"), AssetsManager.get().getRegion("mainmenuplay"), 200-AssetsManager.get().getRegion("mainmenuplay").getRegionWidth()/2, 800-AssetsManager.get().getRegion("mainmenuplay").getRegionHeight()-40-95);
 		//in = addButton(AssetsManager.get().getRegion("mainmenuin"), AssetsManager.get().getRegion("mainmenuinp"), 240-AssetsManager.get().getRegion("mainmenuplay").getRegionWidth()/2, 800-AssetsManager.get().getRegion("mainmenuplay").getRegionHeight()-40-95-128);
 		//high = addButton(AssetsManager.get().getRegion("mainmenuhigh"), AssetsManager.get().getRegion("mainmenuhighp"), 240-AssetsManager.get().getRegion("mainmenuplay").getRegionWidth()/2, 800-AssetsManager.get().getRegion("mainmenuplay").getRegionHeight()-40-95-128*2);
 		//exit = addButton(AssetsManager.get().getRegion("mainmenuexit"), AssetsManager.get().getRegion("mainmenuexitp"), 240-AssetsManager.get().getRegion("mainmenuplay").getRegionWidth()/2, 800-AssetsManager.get().getRegion("mainmenuplay").getRegionHeight()-40-95-128*3);

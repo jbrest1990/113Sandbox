@@ -9,7 +9,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.sun.tools.example.debug.bdi.InputListener;
 
-public class BasicScreen implements Screen, InputListener, EventListener{
+public class BasicScreen implements Screen, com.me.cs133game.InputListener, EventListener{
 	
 	protected Stage myStage;
 	
@@ -130,7 +130,7 @@ public class BasicScreen implements Screen, InputListener, EventListener{
 		myStage.addActor(img);
 	}
 
-	@Override
+
 	public String getLine() {
 		// TODO Auto-generated method stub
 		return null;

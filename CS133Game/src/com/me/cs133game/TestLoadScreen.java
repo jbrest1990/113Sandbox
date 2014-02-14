@@ -20,6 +20,8 @@ public class TestLoadScreen extends BasicScreen {
 	
 	public void show(){
 		super.show();
+		AssetsManager.get().loadTexture("data/mainmenu.png");
+		AssetsManager.get().loadTexture("data/mainmenuplay.png");
 		AssetsManager.get().loadTexture("data/background2.png");
 
 
@@ -30,7 +32,9 @@ public class TestLoadScreen extends BasicScreen {
 		if(AssetsManager.get().update()){
 			//regions loading should ideally go in screen constructors, which will be called here
 			//class scope bitch
-			AssetsManager.get().loadTextureRegion("background2", "data/background2.png", 0, 0, 512, 1024);
+			AssetsManager.get().loadTextureRegion("background2", "data/mainmenu.png", 0, 0, 1024, 512);
+			AssetsManager.get().loadTextureRegion("gamebackground", "data/background2.png", 0, 0, 1024, 512);
+			AssetsManager.get().loadTextureRegion("mainmenuplay", "data/mainmenuplay.png", 0, 0, 256, 64);
 //			loadEnemyType(1, 5, 1, new String[][]{ {"redm", "blum", null, "yelm", null, null}, {"detm", "detm", null, "detm", null, null} }, 32, 32);
 //			loadEnemyType(2, 10, 2, new String[][]{ {"redb", "blub", "purb", "yelb", "orab", "greb"}, {"detb", "detb", "detb", "detb", "detb", "detb"} }, 64, 64);
 //			loadEnemyType(1, 3, 1, new String[][]{ {"reds", "blus", null, "yels", null, null}, {"dets", "dets", null, "dets", null, null} }, 16, 16);
@@ -39,7 +43,7 @@ public class TestLoadScreen extends BasicScreen {
 //			ScreenManager.get().addScreen("test2", new TestMenuScreen2());
 			//ScreenManager.get().addScreen("mainmenuintro", new MainMenuIntroScreen());
 			ScreenManager.get().addScreen("mainmenu", new MainMenuScreen());
-			//ScreenManager.get().addScreen("game", new GameScreen());
+			ScreenManager.get().addScreen("game", new GameScreen());
 			//ScreenManager.get().addScreen("highscore", new HighscoreScreen());
 			ScreenManager.get().changeScreen("mainmenu");
 		}
