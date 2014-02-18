@@ -8,8 +8,8 @@ public class Main {
 		LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
 		cfg.title = "CS133Game";
 		cfg.useGL20 = false;
-		cfg.width = 800;
-		cfg.height = 600;
+		cfg.width = 1024;
+		cfg.height = 512;
 		
 		new LwjglApplication(new MyGdxGame(), cfg);
 	}
