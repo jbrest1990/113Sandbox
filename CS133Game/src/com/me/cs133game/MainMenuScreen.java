@@ -56,9 +56,19 @@ public class MainMenuScreen extends MenuScreen {
 		a = new Image(AssetsManager.get().getRegion("mainmenulogo"));
 		myStage.addActor(a);
 		a.setPosition(240-AssetsManager.get().getRegion("mainmenulogo").getRegionWidth()/2, 800 - AssetsManager.get().getRegion("mainmenulogo").getRegionHeight()/2 - 67);*/
-		play = addButton(AssetsManager.get().getRegion("mainmenuplay"), AssetsManager.get().getRegion("mainmenuplay"), 200-AssetsManager.get().getRegion("mainmenuplay").getRegionWidth()/2, 800-AssetsManager.get().getRegion("mainmenuplay").getRegionHeight()-40-95);
+		play = addButton(AssetsManager.get().getRegion("mainmenuplay"), AssetsManager.get().getRegion("mainmenuplayp"), 225-AssetsManager.get().getRegion("mainmenuplayp").getRegionWidth()/6, 800-AssetsManager.get().getRegion("mainmenuplay").getRegionHeight()-40-95);
+		play.setHeight(64);
+		play.setWidth(128);
 		//in = addButton(AssetsManager.get().getRegion("mainmenuin"), AssetsManager.get().getRegion("mainmenuinp"), 240-AssetsManager.get().getRegion("mainmenuplay").getRegionWidth()/2, 800-AssetsManager.get().getRegion("mainmenuplay").getRegionHeight()-40-95-128);
-		//high = addButton(AssetsManager.get().getRegion("mainmenuhigh"), AssetsManager.get().getRegion("mainmenuhighp"), 240-AssetsManager.get().getRegion("mainmenuplay").getRegionWidth()/2, 800-AssetsManager.get().getRegion("mainmenuplay").getRegionHeight()-40-95-128*2);
+		high = addButton(AssetsManager.get().getRegion("highscore"), AssetsManager.get().getRegion("highscorep"), 225-AssetsManager.get().getRegion("highscorep").getRegionWidth()/6, 800-AssetsManager.get().getRegion("highscore").getRegionHeight()-40-150);
+		high.setHeight(64);
+		high.setWidth(128);
+		in = addButton(AssetsManager.get().getRegion("instructions"), AssetsManager.get().getRegion("instructionsp"), 225-AssetsManager.get().getRegion("instructionsp").getRegionWidth()/6, 800-AssetsManager.get().getRegion("instructions").getRegionHeight()-40-205);
+		in.setHeight(64);
+		in.setWidth(128);
+		exit = addButton(AssetsManager.get().getRegion("exit"), AssetsManager.get().getRegion("exitp"), 240-AssetsManager.get().getRegion("exitp").getRegionWidth()/6, 800-AssetsManager.get().getRegion("exit").getRegionHeight()-40-260);
+		exit.setHeight(64);
+		exit.setWidth(50);
 		//exit = addButton(AssetsManager.get().getRegion("mainmenuexit"), AssetsManager.get().getRegion("mainmenuexitp"), 240-AssetsManager.get().getRegion("mainmenuplay").getRegionWidth()/2, 800-AssetsManager.get().getRegion("mainmenuplay").getRegionHeight()-40-95-128*3);
 //		a = new Image(AssetsManager.get().getRegion("boards"));
 //		myStage.addActor(a);
